@@ -21,7 +21,7 @@ const Login = () => {
     return (
         <div className='w-[400px] px-6  border-2 h-[250px] mx-auto mt-24 text-center'>
            <div className='mt-16'>
-           <h1 className='md:text-2xl font-bold'>Login</h1>
+           <h1 className='md:text-2xl font-bold '>Login</h1>
             <div onClick={()=> signInWithGoogle()}  className=' w-full border-2 rounded-full flex items-center mt-4 p-2'>
                 <img width={30} src={logo} alt="" />
               <button className=' ml-20 text-xl'>Continue with Google</button>

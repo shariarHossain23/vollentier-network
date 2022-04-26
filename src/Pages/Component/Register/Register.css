@@ -1,2 +1,6 @@
-.register-form {
+.register-form input {
+  border-bottom: 2px solid gray;
+  margin-bottom: 30px;
+  outline: none;
+  width: 100%;
 }
