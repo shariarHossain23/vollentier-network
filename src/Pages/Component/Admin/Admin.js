@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Title from '../../../Title/Title';
 import Registerperson from '../Registerperson/Registerperson';
 // import { useTable } from 'react-table';
 
@@ -15,6 +16,7 @@ const Admin = () => {
      const navigate = useNavigate()
     return (
         <div className='flex gap-6'>
+            <Title title={"Admin"}></Title>
             <div className='w-60 h-[100vh] shadow-emerald-100'>
                 <h1 onClick={()=>navigate("/eventpost")} className='text-center font-bold'><span className='text-xl'>+</span> Add Event</h1>
             </div>

@@ -17,6 +17,7 @@ const Register = () => {
         await axios.post('http://localhost:5000/volentier',volunteer)
         .then(response => {
            toast.success("registration successfully")
+           event.target.reset()
         })
     }
     return (
