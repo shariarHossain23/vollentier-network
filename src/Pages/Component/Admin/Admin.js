@@ -16,7 +16,7 @@ const Admin = () => {
     return (
         <div className='flex gap-6'>
             <div className='w-60 h-[100vh] shadow-emerald-100'>
-                <h1 onClick={()=>navigate("/event")} className='text-center font-bold'><span className='text-xl'>+</span> Add Event</h1>
+                <h1 onClick={()=>navigate("/eventpost")} className='text-center font-bold'><span className='text-xl'>+</span> Add Event</h1>
             </div>
             <div className='bg-[#f4f7fc] w-full'>
               {
