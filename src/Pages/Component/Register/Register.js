@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import { toast } from 'react-toastify';
 import './Register.css';
 
 const Register = () => {
@@ -15,7 +16,7 @@ const Register = () => {
         }
         await axios.post('http://localhost:5000/volentier',volunteer)
         .then(response => {
-            console.log(response);
+           toast.success("registration successfully")
         })
     }
     return (

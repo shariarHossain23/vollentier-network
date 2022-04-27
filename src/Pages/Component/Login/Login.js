@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useAuthState, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -13,9 +14,15 @@ const Login = () => {
     let [user1] = useAuthState(auth);
   
     let from = location.state?.from?.pathname || "/";
-
+    
     if(user1){
-        navigate(from, { replace: true });
+        const email = user1?.email
+         axios.post("http://localhost:5000/login",{email})
+         .then(response => {
+             localStorage.setItem("volunteerTOken",response.data)
+             navigate(from, { replace: true });
+         })
+        
     }
     
     return (

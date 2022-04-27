@@ -25,6 +25,7 @@ const Header = () => {
                     user ? <a onClick={handleSignOut} className='font-bold'>Logout</a>:<CustomLink className='font-bold' to='/login'>Login</CustomLink>
                 }
                 <Link className="bg-blue-600 px-4 py-2 text-white" to='/register'>Register</Link>
+                <Link className="bg-gray-400 px-4 py-2 text-white" to='/admin'>Admin</Link>
             </div>
         </div>
     );

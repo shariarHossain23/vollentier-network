@@ -1,8 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Admin from './Pages/Component/Admin/Admin';
 import Home from './Pages/Component/Home/Home';
 import Login from './Pages/Component/Login/Login';
 import Register from './Pages/Component/Register/Register';
+import Registerperson from './Pages/Component/Registerperson/Registerperson';
 import RequireAuth from './Pages/Component/ReqireAuth/RequireAuth';
 import Header from './Pages/Shared/Header/Header';
 
@@ -18,7 +22,10 @@ function App() {
            <Register></Register>
          </RequireAuth>
        }></Route>
+       <Route path='/shariar' element={<Registerperson></Registerperson>}></Route>
+       <Route path='/admin'element={<Admin></Admin>}></Route>
      </Routes>
+     <ToastContainer></ToastContainer>
     </div>
   );
 }
