@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Admin from './Pages/Component/Admin/Admin';
+import Event from './Pages/Component/Event/Event';
 import Home from './Pages/Component/Home/Home';
 import Login from './Pages/Component/Login/Login';
 import Register from './Pages/Component/Register/Register';
@@ -24,6 +25,7 @@ function App() {
        }></Route>
        <Route path='/shariar' element={<Registerperson></Registerperson>}></Route>
        <Route path='/admin'element={<Admin></Admin>}></Route>
+       <Route path='/event' element={<Event></Event>}></Route>
      </Routes>
      <ToastContainer></ToastContainer>
     </div>
