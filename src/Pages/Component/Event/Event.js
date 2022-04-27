@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Event = () => {
     const [title,setTitle] = useState("")
@@ -17,7 +18,7 @@ const Event = () => {
         }
          axios.post("http://localhost:5000/event",event)
         .then(response =>{
-            console.log(response);
+            toast.success("post successfull")
         })
     }
 
